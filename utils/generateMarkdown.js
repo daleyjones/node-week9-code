@@ -2,7 +2,7 @@ function renderLicenseBadge(license) {
   if (!license) {
     return '';
   }
- 
+
   const licenseBadges = {
     MIT: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
     'APACHE 2.0': '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
@@ -18,7 +18,6 @@ function renderLicenseLink(license) {
     return '';
   }
 
-  
   const licenseLinks = {
     MIT: 'https://opensource.org/licenses/MIT',
     'APACHE 2.0': 'https://opensource.org/licenses/Apache-2.0',
@@ -28,7 +27,6 @@ function renderLicenseLink(license) {
 
   return licenseLinks[license] || '';
 }
-
 
 function renderLicenseSection(license) {
   if (!license) {
@@ -46,7 +44,7 @@ function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseSection = renderLicenseSection(data.license);
 
-  return `## Title ${data.title}
+  return `## ${data.title}
 
 ${licenseBadge}
 
@@ -59,6 +57,7 @@ ${data.description}
 - [Tests](#tests)
 - [Credits](#credits)
 ${licenseSection}
+
 ## Installation
 To install the dependencies, run the following command:
 \`\`\`
@@ -81,6 +80,5 @@ ${data.credits}
 For any questions or inquiries, please reach out to me via GitHub: [${data.gitHub}](https://github.com/${data.gitHub}) or email: ${data.email}.
 `;
 }
-
 
 module.exports = generateMarkdown;
