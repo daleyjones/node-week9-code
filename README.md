@@ -35,4 +35,6 @@ None
 
 ## Questions
 For any questions or inquiries, please reach out to me via GitHub: [545](https://github.com/545) or email: 545.
-[![Screen Cast](https://drive.google.com/file/d/1vOIq4WDwBqWeqGrLt1SQXmuZBDeYNwGQ/view)]
+
+Check out the video demonstration [here](https://drive.google.com/file/d/1vOIq4WDwBqWeqGrLt1SQXmuZBDeYNwGQ/view).
+
